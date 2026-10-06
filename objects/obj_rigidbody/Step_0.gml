@@ -18,7 +18,7 @@ if (freeze == true) {
 velocity.x *= damp
 velocity.y *= damp
 if (not Command.is_on_floor(self)) {
-	velocity.y += Vars.G
+	velocity.y += g
 	
 }
 

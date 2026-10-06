@@ -19,6 +19,12 @@ function detect_portal() {
 	is_in_portal = place_meeting(x, y, obj_portal)
 }
 
+function control_sfx() {
+	if (sprite_index == spr_player_run and (int64(image_index) == 0 or int64(image_index == 4))) {
+		audio_play_sound(snd_footstep_1, 1, false);
+	}
+}
+
 function control_inputs() {
 	moveSpeed = RUN_SPEED
 	moveAccel = RUN_ACCEL
@@ -34,6 +40,7 @@ function control_inputs() {
 	is_aimming = keyboard_check(vk_enter) and is_in_portal == false
 	if (keyboard_check(vk_enter) and is_in_portal) {
 		global.level += 1
+		global.attempt = 1
 		room_goto_next()
 	}
 
@@ -71,14 +78,13 @@ function control_physics() {
 	if (not Command.is_on_floor(self)) {
 		if (is_wall_sliding) {
 			hangTime = 0
-			velocity.y = Vars.G * 4
+			velocity.y = g * 4
 			return
 		}
-		velocity.y += Vars.G
+		velocity.y += g
 	}
 	else {
 		if (delta_pos.y >= 2.7) {
-			show_debug_message("FFALL FORCE")
 			is_fall_stun = true
 			Command.camera_shake(4, 0.1)
 		}
@@ -160,6 +166,7 @@ control_rule()
 var delta_pos0 = {x : x, y : y}
 
 control_physics()
+control_sfx()
 if (not is_fall_stun) {
 	detect_portal()
 	control_inputs()

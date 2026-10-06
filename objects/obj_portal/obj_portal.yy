@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_portal",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_portal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entity",
-    "path":"folders/Objects/Entity.yy",
+    "name":"structs",
+    "path":"folders/Objects/structs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

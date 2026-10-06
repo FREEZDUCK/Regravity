@@ -1,9 +1,10 @@
 //Command.cmove_and 쓰기 위한 필수 변수들
 velocity = {x: 0, y: 0}
-coll_list = [layer_tilemap_get_id("coll_tile"), obj_rigidbody]
+coll_list = [layer_tilemap_get_id("coll_tile"), obj_rigidbody, obj_reverse_bottom, obj_reverse_top]
 kill_tile = layer_tilemap_get_id("kill_tile")
 mass = 1
 impulse = {x: 0, y: 0}
+g = global.G
 
 dir = {x : 0, y : 0}
 prev_dir_x = 0
@@ -24,7 +25,10 @@ is_in_portal = false
 delta_pos = {x : x, y : y}
 start_pos = {x : x, y : y}
 
+// Sound timers
+
 function respawn() {
+	global.attempt++
 	room_restart()
 //	velocity = {x : 0, y : 0}
 //	x = start_pos.x

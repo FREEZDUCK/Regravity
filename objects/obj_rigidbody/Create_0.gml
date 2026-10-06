@@ -7,6 +7,7 @@ mass = 1
 bounce = {x : 0, y : 0}
 
 damp = 0.98
+g = global.G
 
 freeze = true
 _prev_freeze = freeze

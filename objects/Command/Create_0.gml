@@ -1,10 +1,12 @@
+part_system_layer(global.ps, "particles");
+
 function get_key_direction(a, b) {
 	return keyboard_check(ord(b)) - keyboard_check(ord(a))
 }
 
 function camera_shake(shakePower, duration) {
-	obj_camera.shakePower += shakePower
-	obj_camera.shakeDuration += duration * 60
+	obj_camera.shakePower = shakePower
+	obj_camera.shakeDuration = duration * 60
 }
 
 function is_animation_finish(obj) {
@@ -16,7 +18,7 @@ function is_animation_finish(obj) {
 
 function is_on_floor(obj) {
 	with (obj) {
-		return place_meeting(x, y+1, coll_list)
+		return place_meeting(x, y+0.5, coll_list)
 	}
 }
 
@@ -32,9 +34,9 @@ function is_on_wall(obj, margin = 1) {
 	}
 }
 
-function get_direction(v0, target_v) {
-	var dx = target_v.x - v0.x
-	var dy = target_v.y - v0.y
+function get_direction(x0, y0, x1, y1) {
+	var dx = x1 - x0
+	var dy = y1 - y0
 	var len = point_distance(0, 0, dx, dy)
 
 	if (len == 0) return {x : 0, y : 0}

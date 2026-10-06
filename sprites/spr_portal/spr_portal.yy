@@ -74,8 +74,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"entity",
-    "path":"folders/Sprites/entity.yy",
+    "name":"structs",
+    "path":"folders/Sprites/structs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

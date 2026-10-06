@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"rigidbodies",
-    "path":"folders/Sprites/entity/rigidbodies.yy",
+    "path":"folders/Sprites/rigidbodies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

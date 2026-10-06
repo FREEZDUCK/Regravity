@@ -1,3 +1,7 @@
+if (not instance_exists(obj_player)) {
+	return
+}
+
 var target_x = obj_player.x - game_width / 2;
 var target_y = obj_player.y - 20 - game_height / 2;
 
