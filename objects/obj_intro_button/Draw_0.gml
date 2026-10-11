@@ -1,0 +1,6 @@
+draw_self()
+draw_set_halign(fa_left)
+draw_set_colour(make_colour_rgb(46, 184, 36))
+draw_set_font(font_intro_button_in_text)
+draw_text(x, y, in_name)
+draw_set_colour(c_white)

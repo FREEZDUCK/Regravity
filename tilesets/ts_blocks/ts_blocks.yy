@@ -2,9 +2,17 @@
   "$GMTileSet":"v1",
   "%Name":"ts_blocks",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"labor","closed_edge":false,"name":"labor","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+    {"$GMAutoTileSet":"","%Name":"ice","closed_edge":false,"name":"ice","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         44,23,24,12,40,28,30,54,39,43,45,57,61,9,6,19,27,22,38,18,13,8,7,3,46,41,25,20,60,55,56,35,17,51,11,
         2,14,4,62,36,59,34,1,50,33,52,49,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"labor","closed_edge":false,"name":"labor","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        204,183,184,172,200,188,190,214,199,203,205,217,221,169,166,179,187,182,198,178,173,168,167,163,206,
+        201,185,180,220,215,216,195,177,211,171,162,174,164,222,196,219,194,161,210,193,212,209,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"tile","closed_edge":false,"name":"tile","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        284,263,264,252,280,268,270,294,279,283,285,297,301,249,246,259,267,262,278,258,253,248,247,243,286,
+        281,265,260,300,295,296,275,257,291,251,242,254,244,302,276,299,274,241,290,273,292,289,
       ],},
   ],
   "macroPageTiles":{
@@ -18,7 +26,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"TileSets",
-    "path":"folders/TileSets.yy",
+    "path":"folders/Sprites/TileSets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

@@ -1,4 +1,12 @@
-part_system_layer(global.ps, "particles");
+if (room != 0) {
+	part_system_layer(global.ps, "particles");
+}
+
+function change_fullscreen() {
+	global.is_fullscreen = !global.is_fullscreen
+	window_set_fullscreen(global.is_fullscreen)
+}
+
 
 function get_key_direction(a, b) {
 	return keyboard_check(ord(b)) - keyboard_check(ord(a))
@@ -19,6 +27,12 @@ function is_animation_finish(obj) {
 function is_on_floor(obj) {
 	with (obj) {
 		return place_meeting(x, y+0.5, coll_list)
+	}
+}
+
+function is_touch_ceiling(obj) {
+	with (obj) {
+		return place_meeting(x, y-0.5, coll_list)
 	}
 }
 

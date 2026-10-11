@@ -16,6 +16,7 @@ WALK_JUMPPOWER = 1.5
 RUN_SPEED = 1.4
 RUN_ACCEL = 0.1
 RUN_JUMPPOWER = 2.1
+jump_padding_timer = 0
 
 is_aimming = false
 is_wall_sliding = false

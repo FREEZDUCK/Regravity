@@ -1,0 +1,2 @@
+_TEXT_START_X = 18
+_TEXT_START_Y = 11

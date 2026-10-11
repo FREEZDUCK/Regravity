@@ -5,6 +5,9 @@ if (not instance_exists(obj_player)) {
 var target_x = obj_player.x - game_width / 2;
 var target_y = obj_player.y - 20 - game_height / 2;
 
+layer_x("Background", cam_pos.x * 0.2)
+layer_y("Background", cam_pos.y * 0.2)
+
 shakeDuration = clamp(shakeDuration - 1, 0, shakeDuration)
 
 var r_shakeOffset = {x : 0, y : 0}

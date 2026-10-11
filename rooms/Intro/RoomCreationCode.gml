@@ -1,5 +1,8 @@
 global.G = 0.1
+global.jump_padding_frames = 5
 global.is_fullscreen = false
+
+global.setting_prev_room = Intro
 
 global.level = 0
 global.attempt = 1
@@ -22,7 +25,7 @@ global.level_titles = [
 	"12. Box can do It!"
 ]
 
+// SETTING 초기값
+global.is_chae_key = false
 
-
-
-room_goto_next()
+//room_goto_next()

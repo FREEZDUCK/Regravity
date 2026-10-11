@@ -24,7 +24,7 @@ function is_in_player() {
 }
 
 if is_in_player() {
-	obj_player.g = 0
+	obj_player.g = 0.09
 	obj_player.velocity.y = 0
 } else {
 	obj_player.g = global.G
