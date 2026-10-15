@@ -29,9 +29,9 @@ function control_inputs() {
 	moveSpeed = RUN_SPEED
 	moveAccel = RUN_ACCEL
 	prev_dir_x = dir.x
-	dir.x = Command.get_key_direction("A", "D")
 	
-	if (global.is_chae_key) {
+	dir.x = Command.get_key_direction("A", "D")
+	if (global.is_wasd == false) {
 		dir.x = keyboard_check(vk_right) - keyboard_check(vk_left)
 	}
 	
@@ -40,26 +40,25 @@ function control_inputs() {
 	
 	var is_released_shoot_key = false
 	
-	if (global.is_chae_key) {
+	if (global.is_wasd == false) {
 		is_released_shoot_key = keyboard_check_released(ord("E"))
+		is_aimming = keyboard_check(ord("E"))
 	} else {
 		is_released_shoot_key = keyboard_check_released(vk_enter)
+		is_aimming = keyboard_check(vk_enter)
 	}
 	
 	if (is_released_shoot_key and (sprite_index == spr_player_use_gun or sprite_index == spr_player_jump_use_gun)) {
 		shoot()
 	}
+
 	
-	if (global.is_chae_key) {
-		is_aimming = keyboard_check(ord("E")) and is_in_portal == false
-	} else {
-		is_aimming = keyboard_check(vk_enter) and is_in_portal == false
-	}
-	
-	if (keyboard_check(vk_enter) and is_in_portal) {
-		global.level += 1
-		global.attempt = 1
-		room_goto_next()
+	if (is_in_portal) {
+		if (keyboard_check(ord("W")) and global.is_wasd == true) {
+			clear()
+		} else if (keyboard_check(vk_up) and global.is_wasd == false) {
+			clear()
+		}
 	}
 
 	if (key_space) {

@@ -7,12 +7,18 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_2F9A7591","path":"rooms/Intro/Intro.yy",},
-    {"name":"inst_6DBDFEE9","path":"rooms/Intro/Intro.yy",},
-    {"name":"inst_442006A2","path":"rooms/Intro/Intro.yy",},
-    {"name":"inst_F538878","path":"rooms/Intro/Intro.yy",},
     {"name":"inst_2468D591","path":"rooms/Intro/Intro.yy",},
     {"name":"inst_4B665209","path":"rooms/Intro/Intro.yy",},
     {"name":"inst_127083F2","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_31B80B4E","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_63C1A5C8","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_35188BBB","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_39F83B1","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_622BA3C4","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_33547DCB","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_203C964A","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_135195E2","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_1F5AB106","path":"rooms/Intro/Intro.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,20 +43,33 @@
         {"name":"g_AddCol","type":1,"value":"#FF000000",},
         {"name":"g_DistortTexture","type":2,"value":"_filter_underwater_noise_sprite",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"outline_button","depth":200,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"outline_button","properties":[
+        {"name":"g_OutlineColour","type":1,"value":"#FFFFFFFF",},
+        {"name":"g_OutlineRadius","type":0,"value":"1",},
+        {"name":"g_OutlinePixelScale","type":0,"value":"1",},
+      ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"buttons","depth":300,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_63C1A5C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_63C1A5C8","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":103.0,},
+        {"$GMRInstance":"v4","%Name":"inst_35188BBB","colour":4279834905,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35188BBB","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"index","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":142.0,},
+        {"$GMRInstance":"v4","%Name":"inst_39F83B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39F83B1","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"index","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":181.0,},
+        {"$GMRInstance":"v4","%Name":"inst_135195E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_135195E2","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"index","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":220.0,},
+      ],"layers":[],"name":"buttons","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2F9A7591","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F9A7591","objectId":{"name":"Command","path":"objects/Command/Command.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_127083F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_127083F2","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v4","%Name":"inst_6DBDFEE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DBDFEE9","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"in_name","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"PLAY",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.0,"y":116.0,},
-        {"$GMRInstance":"v4","%Name":"inst_442006A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_442006A2","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"in_name","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"SETTINGS",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.0,"y":157.0,},
-        {"$GMRInstance":"v4","%Name":"inst_F538878","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F538878","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_intro_button","path":"objects/obj_intro_button/obj_intro_button.yy",},"propertyId":{"name":"in_name","path":"objects/obj_intro_button/obj_intro_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"EXIT",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.0,"y":198.0,},
+        {"$GMRInstance":"v4","%Name":"inst_31B80B4E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_31B80B4E","objectId":{"name":"obj_intro_control","path":"objects/obj_intro_control/obj_intro_control.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_622BA3C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_622BA3C4","objectId":{"name":"obj_intro_button_shadow","path":"objects/obj_intro_button_shadow/obj_intro_button_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":103.0,},
+        {"$GMRInstance":"v4","%Name":"inst_33547DCB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33547DCB","objectId":{"name":"obj_intro_button_shadow","path":"objects/obj_intro_button_shadow/obj_intro_button_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":142.0,},
+        {"$GMRInstance":"v4","%Name":"inst_203C964A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_203C964A","objectId":{"name":"obj_intro_button_shadow","path":"objects/obj_intro_button_shadow/obj_intro_button_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":181.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1F5AB106","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F5AB106","objectId":{"name":"obj_intro_button_shadow","path":"objects/obj_intro_button_shadow/obj_intro_button_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":18.0,"y":220.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_VignetteEdges","type":0,"value":"0.7",},
         {"name":"g_VignetteEdges","type":0,"value":"2",},
         {"name":"g_VignetteSharpness","type":0,"value":"2",},

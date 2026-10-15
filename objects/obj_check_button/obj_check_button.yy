@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_check_button",
-    "path":"sprites/spr_check_button/spr_check_button.yy",
+    "name":"spr_gui_marker",
+    "path":"sprites/spr_gui_marker/spr_gui_marker.yy",
   },
   "spriteMaskId":null,
   "visible":true,

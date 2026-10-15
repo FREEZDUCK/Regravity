@@ -12,11 +12,12 @@ prev_spr_index = spr_player_idle
 WALK_SPEED = 0.5
 WALK_ACCEL = 0.2
 WALK_JUMPPOWER = 1.5
-
 RUN_SPEED = 1.4
 RUN_ACCEL = 0.1
 RUN_JUMPPOWER = 2.1
 jump_padding_timer = 0
+
+
 
 is_aimming = false
 is_wall_sliding = false
@@ -34,6 +35,12 @@ function respawn() {
 //	velocity = {x : 0, y : 0}
 //	x = start_pos.x
 //	y = start_pos.y
+}
+
+function clear() {
+	global.level += 1
+	global.attempt = 1
+	Command.goto_level(global.level)
 }
 
 function is_touching_rigid() {

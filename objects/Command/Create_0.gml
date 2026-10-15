@@ -134,3 +134,47 @@ function cmove_and_collide(obj, bounce_x = 0, bounce_y = 0) {
 
 	}
 }
+
+function save_gameData() { // 70% GPT
+	show_debug_message("SAVED GAMEDATA")
+	var settings = {
+	    init_fullscreen : global.is_fullscreen,
+	    lang : global.lang,
+		is_wasd : global.is_wasd,
+		level : int64(global.level)
+	};
+
+	// Struct → JSON 문자열
+	var json = json_stringify(settings);
+
+	// 파일 생성 및 쓰기
+	var file = file_text_open_write(global.GAMEDATA_JSON_FILE_NAME);
+	file_text_write_string(file, json);
+	file_text_close(file);
+}
+
+function sync_gameData() {
+	var data = get_gameData()
+	global.level = int64(data.level)
+	global.lang = data.lang
+	global.is_fullscreen = data.init_fullscreen
+	window_set_fullscreen(global.is_fullscreen)
+	global.is_wasd = data.is_wasd
+}
+
+function get_gameData() {
+	var file = file_text_open_read(global.GAMEDATA_JSON_FILE_NAME);
+	var read_str = file_text_read_string(file)
+	var data = json_parse(read_str)
+	file_text_close(file)
+	return data
+}
+
+function goto_level(level) {
+	var room_name = "level_" + string(level);
+	var room_id = asset_get_index(room_name);
+
+	if (room_id != -1) {
+		room_goto(room_id);
+	}
+}
