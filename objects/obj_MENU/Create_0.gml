@@ -69,4 +69,4 @@ function set_instances() {
 	}
 }
 
-set_instances()
+//set_instances()

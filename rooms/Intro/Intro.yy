@@ -19,6 +19,7 @@
     {"name":"inst_203C964A","path":"rooms/Intro/Intro.yy",},
     {"name":"inst_135195E2","path":"rooms/Intro/Intro.yy",},
     {"name":"inst_1F5AB106","path":"rooms/Intro/Intro.yy",},
+    {"name":"inst_3A4381A1","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

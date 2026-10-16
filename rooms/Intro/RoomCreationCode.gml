@@ -1,6 +1,8 @@
 global.G = 0.1
 global.jump_padding_frames = 5
 global.is_fullscreen = false
+global.GUI_WIDTH = 1920
+global.GUI_HEIGHT = 1080
 
 global.setting_prev_room = Intro
 

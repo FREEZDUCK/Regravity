@@ -5,7 +5,7 @@ cursor_y = device_mouse_y_to_gui(0)
 function draw_default_text() {
 	draw_set_halign(fa_center)
 	draw_set_colour(make_colour_rgb(46, 184, 36))
-	draw_set_font(font_setting_in_text)
+	draw_set_font(font_MENU_inText)
 	draw_text(x, y, intext)
 	draw_set_colour(c_white)
 	draw_set_halign(fa_left)
@@ -15,7 +15,7 @@ function detect_click() {
 	if (not mouse_check_button_pressed(1)) {
 		return 0
 	}
-	draw_set_font(font_setting_in_text)
+	draw_set_font(font_MENU_inText)
 	
 	var text_width_half = string_width(intext) / 2
 	var text_height = string_height(intext)

@@ -6,7 +6,7 @@ function draw_panel() {
 
 function draw_key_info() {
 	draw_set_colour(c_gray)
-	draw_set_font(font_setting_in_text)
+	draw_set_font(font_MENU_inText)
 	draw_set_halign(fa_right)
 	draw_text(1910, _MAX_PANEL_HEIGHT-40, "[TAB]")
 	
@@ -92,3 +92,4 @@ if (_panel_height > _MAX_PANEL_HEIGHT * 0.7) {
 } else {
 	allow_user_control = false
 }
+display_set_gui_size(obj_camera.game_width, obj_camera.game_height);

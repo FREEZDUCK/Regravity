@@ -18,7 +18,6 @@ RUN_JUMPPOWER = 2.1
 jump_padding_timer = 0
 
 
-
 is_aimming = false
 is_wall_sliding = false
 is_fall_stun = false
